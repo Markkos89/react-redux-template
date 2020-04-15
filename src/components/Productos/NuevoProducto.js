@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 //actions de redux
-import { crearNuevoProductoAction } from '../actions/productosActions'
-import { mostrarAlertaAction, ocultarAlertaAction } from '../actions/alertaActions'
+import { crearNuevoProductoAction } from '../../store/actions/productosActions'
+import { mostrarAlertaAction, ocultarAlertaAction } from '../../store/actions/alertaActions'
 
 function NuevoProducto({ history }) {
     const [nombre, setNombre] = useState("")

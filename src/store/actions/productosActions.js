@@ -13,7 +13,7 @@ import {
     PRODUCTO_EDITADO_ERROR,
     COMENZAR_EDICION_PRODUCTO
 } from '../types';
-import clienteAxios from '../config/axios'
+import clienteAxios from '../../config/axios'
 import Swal from 'sweetalert2'
 
 // crear nuevos productos

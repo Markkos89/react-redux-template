@@ -4,7 +4,7 @@ import Swal from 'sweetalert2'
 
 //Redux
 import { useDispatch } from 'react-redux'
-import { borrarProductoAction, obtenerProductoEditar } from '../actions/productosActions'
+import { borrarProductoAction, obtenerProductoEditar } from '../../store/actions/productosActions'
 
 
 function Producto({ producto }) {

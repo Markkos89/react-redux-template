@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react'
 import Producto from './Producto'
+import { Link } from 'react-router-dom'
 
 //Redux
 import { useSelector, useDispatch } from 'react-redux'
-import { obtenerProductosAction } from '../actions/productosActions'
+import { obtenerProductosAction } from '../../store/actions/productosActions'
 
 function Productos() {
     const dispatch = useDispatch();
@@ -22,7 +23,7 @@ function Productos() {
     return (
         <>
             <h2 className="text-center my-7">Listado de Productos</h2>
-
+            <Link to={"/productos/nuevo"} className="btn btn-danger nuevo-post d-block d-md-inline-block mb-5">Agregar Producto</Link>
             {error ? <p className="font-weight-bold alert alert-danger text-center">Hubo un error</p> : null}
             {loading ? <p className="text-center">Cargando...</p> : null}
 
