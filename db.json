@@ -1,0 +1,54 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Jugo de Zanahoria",
+      "precio": "31111"
+    },
+    {
+      "id": 2,
+      "nombre": "Jugo de Naranja",
+      "precio": "10000"
+    },
+    {
+      "nombre": "Jugo de Naranja",
+      "precio": "700",
+      "id": 3
+    },
+    {
+      "nombre": "Rib Eye 800g",
+      "precio": "200",
+      "id": 4
+    },
+    {
+      "nombre": "Jugo de Fresa",
+      "precio": "200",
+      "id": 5
+    },
+    {
+      "nombre": "qweqwewq",
+      "precio": 123,
+      "id": 7
+    },
+    {
+      "nombre": "zanahoria",
+      "precio": 180,
+      "id": 12
+    },
+    {
+      "nombre": "papas",
+      "precio": 140,
+      "id": 13
+    },
+    {
+      "nombre": "asddada",
+      "precio": 2222,
+      "id": 14
+    },
+    {
+      "nombre": "manzanas",
+      "precio": "43556",
+      "id": 15
+    }
+  ]
+}
