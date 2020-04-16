@@ -8,10 +8,12 @@ import Login from './components/Auth/Login';
 import Register from './components/Auth/Register';
 
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import ProtectedRoute from './components/ProtectedRoute';
 
 //redux
 import { Provider } from 'react-redux';
 import store from './configStore';
+
 function App() {
   return (
     <BrowserRouter>
@@ -20,10 +22,11 @@ function App() {
         <div className="container mt-5">
           <Switch>
             <Route exact path="/" component={Login} />
-            <Route exact path="/register" component={Register} />
-            <Route exact path="/productos" component={Productos} />
-            <Route exact path="/productos/nuevo" component={NuevoProducto} />
-            <Route exact path="/productos/editar/:id" component={EditarProducto} />
+            <Route path="/register" component={Register} />
+            <ProtectedRoute path="/productos" component={Productos} />
+            <ProtectedRoute path="/productos/nuevo" component={NuevoProducto} />
+            <ProtectedRoute path="/productos/editar/:id" component={EditarProducto} />
+
           </Switch>
         </div>
       </Provider>

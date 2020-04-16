@@ -33,7 +33,7 @@ function EditarProducto() {
     const submitEditarProducto = e => {
         e.preventDefault();
         dispatch(editarProductoAction(producto))
-        history.push("/")
+        history.push("/productos")
     }
 
     return (

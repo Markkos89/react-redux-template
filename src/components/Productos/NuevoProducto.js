@@ -43,7 +43,7 @@ function NuevoProducto({ history }) {
             precio
         });
 
-        history.push("/")
+        history.push("/productos")
     }
 
     return (

@@ -4,8 +4,10 @@ import {
     REGISTER_FAILURE,
     LOGIN_REQUEST,
     LOGIN_SUCCESS,
-    LOGIN_FAILURE
+    LOGIN_FAILURE,
+    USERS_LOGOUT
 } from '../types';
+
 import clienteAxios from '../../config/axios'
 import Swal from 'sweetalert2'
 
@@ -88,3 +90,5 @@ const loginUsuarioError = estado => ({
     type: LOGIN_FAILURE,
     payload: estado
 })
+
+export function logoutAction() { return { type: USERS_LOGOUT } }

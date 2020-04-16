@@ -4,10 +4,15 @@ import { useDispatch } from 'react-redux'
 import { loginAction } from '../../store/actions/userActions';
 
 const Login = () => {
-    // reset login status
-    // this.props.logout();
-    const dispatch = useDispatch();
+
     const history = useHistory();
+    const dispatch = useDispatch();
+
+    // reset login status
+    // useEffect(() => {
+    //     dispatch(logoutAction());
+    // }, [])
+
 
     const [usuario, setUsuario] = useState({
         username: '',
@@ -25,8 +30,8 @@ const Login = () => {
 
         setSubmitted(true);
         if (usuario.username && usuario.password) {
-            dispatch(loginAction(usuario));
-            history.push("/productos")
+            history.push("/")
+            dispatch(loginAction(usuario))
         }
     }
 
